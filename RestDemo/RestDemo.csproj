@@ -193,8 +193,9 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
-    <Compile Include="DataBase\DBConnection.cs" />
-    <Compile Include="DataBase\Userdb.cs" />
+    <Compile Include="DatabaseArea\DbCommand.cs" />
+    <Compile Include="DatabaseArea\DbConnection.cs" />
+    <Compile Include="DatabaseArea\Userdb.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

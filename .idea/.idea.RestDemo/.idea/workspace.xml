@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="" />
+    <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/DbCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/App_Start/RouteConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/App_Start/RouteConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/App_Start/WebApiConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/App_Start/WebApiConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DataBase/DBConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DataBase/Userdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +51,9 @@
     <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F8D88AA-02D5-46F6-9639-14471854CB7C/b9/de5673fe/FromBodyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1893A7B1-1363-41CC-AAEF-3978EDDAF1DE/ac/ba7c2244/HttpTaskAsyncHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RestDemo/DataBase/Userdb.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RestDemo/DataBase/DBConnection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/DbCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,7 +61,6 @@
         <option value="$PROJECT_DIR$/RestDemo/Models/c.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/UserPass.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Role..cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Models/User.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Categories.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Providers.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/CarMark.cs" />
@@ -59,9 +71,15 @@
         <option value="$PROJECT_DIR$/RestDemo/Models/Role.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/ValuesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DataBase/DBConnection.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DataBase/Userdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/.gitignore" />
+        <option value="$PROJECT_DIR$/RestDemo/App_Start/RouteConfig.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DataBase/Userdb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/App_Start/WebApiConfig.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/DbCommand.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Models/User.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +141,8 @@
       <workItem from="1572710114200" duration="3973000" />
       <workItem from="1572715684334" duration="1722000" />
       <workItem from="1572719033886" duration="102000" />
-      <workItem from="1572720121194" duration="579000" />
+      <workItem from="1572720121194" duration="979000" />
+      <workItem from="1572764323022" duration="7110000" />
     </task>
     <servers />
   </component>

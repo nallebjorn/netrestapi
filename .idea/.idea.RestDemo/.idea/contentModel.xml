@@ -101,7 +101,8 @@
           <e p="UserController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
         </e>
-        <e p="DataBase" t="Include">
+        <e p="DatabaseArea" t="Include">
+          <e p="DbCommand.cs" t="Include" />
           <e p="DBConnection.cs" t="Include" />
           <e p="Userdb.cs" t="Include" />
         </e>
