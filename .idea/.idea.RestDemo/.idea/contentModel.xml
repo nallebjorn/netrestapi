@@ -98,12 +98,14 @@
         </e>
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
+          <e p="RoleController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
           <e p="ValuesController.cs" t="Include" />
         </e>
         <e p="DatabaseArea" t="Include">
           <e p="DbCommand.cs" t="Include" />
           <e p="DBConnection.cs" t="Include" />
+          <e p="Roledb.cs" t="Include" />
           <e p="Userdb.cs" t="Include" />
         </e>
         <e p="favicon.ico" t="Include" />

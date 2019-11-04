@@ -13,7 +13,7 @@ namespace RestDemo.Models
 
         public override string ToString()
         {
-            return "object " + username + password;
+            return "object " + username + password + role.ToString();
         }
     }
 }

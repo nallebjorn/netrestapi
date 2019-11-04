@@ -16,13 +16,17 @@ namespace RestDemo.DataBase
             this.user = user;
         }
 
+        public Userdb()
+        {
+        }
+
         public User validateUser()
         {
             var query =
                 "SELECT * FROM users INNER JOIN roles ON users.role_id = roles.role_id WHERE `username` = '" +
                 user.username + "';";
-            var command = DbCommand.create(query);
-            var reader = command.ExecuteReader();
+            var cmd = DbCommand.create(query);
+            var reader = cmd.ExecuteReader();
 
             var temp = new User();
             temp.username = user.username;
@@ -51,22 +55,22 @@ namespace RestDemo.DataBase
             return temp;
         }
 
-        public List<Role> getRoles()
+        public List<User> getUsers()
         {
-            MySqlConnection connection = DbConnection._instance;
-            List<Role> roles = new List<Role>();
-            var command = DbCommand.create("SELECT * FROM roles");
-            using (var reader = command.ExecuteReader())
+            List<User> users = new List<User>();
+            var cmd = DbCommand.create("SELECT * FROM users INNER JOIN roles ON users.role_id = roles.role_id");
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
             {
-                while (reader.Read())
-                {
-                    Role temp = new Role(Int32.Parse(reader["role_id"].ToString()), reader["role_name"].ToString());
-                    roles.Add(temp);
-                }
+                var user = new User();
+                user.username = reader["username"].ToString();
+                user.email = reader["user_email"].ToString();
+                user.role = new Role(Int32.Parse(reader["role_id"].ToString()), reader["role_name"].ToString());
+                user.phone = reader["user_phone"].ToString();
+                users.Add(user);
             }
 
-
-            return roles;
+            return users;
         }
     }
 }
