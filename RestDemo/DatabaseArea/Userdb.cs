@@ -72,5 +72,25 @@ namespace RestDemo.DataBase
 
             return users;
         }
+
+        public Boolean addUser(User user)
+        {
+            var query =
+                "INSERT INTO `users` (`username`, `user_password`, `user_phone`,`user_email`, `role_id`, `create_date`, `update_date`) VALUES ('" +
+                user.username + "', '" + user.password + "', '" + user.phone + "', '" + user.email + "', " +
+                user.role.id + ", current_timestamp(), NULL);";
+            Console.WriteLine(query);
+            var cmd = DbCommand.create(query);
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

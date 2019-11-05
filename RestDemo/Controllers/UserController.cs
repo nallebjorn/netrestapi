@@ -24,6 +24,10 @@ namespace RestDemo.Controllers
             }
 
             Console.WriteLine("adding new user " + value.ToString());
+            if (new Userdb().addUser(value))
+            {
+                return value;
+            }
 
             return null;
         }
