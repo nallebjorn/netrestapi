@@ -5,9 +5,9 @@ using RestDemo.Models;
 
 namespace RestDemo.Controllers
 {
-    public class RoleController : ApiController
+    public class RolesController : ApiController
     {
-        // GET api/role
+        // GET api/roles
         public IEnumerable<Role> Get()
         {
             return new Roledb().getRoles().ToArray();

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RestDemo/Controllers/ProviderController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/RoleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/RolesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Models/Provider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Models/Provider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,6 +25,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F8D88AA-02D5-46F6-9639-14471854CB7C/4c/17fc4199/ApiControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F8D88AA-02D5-46F6-9639-14471854CB7C/50/990943e9/ActionFilterResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F8D88AA-02D5-46F6-9639-14471854CB7C/1b/f0520c1a/ReflectedHttpActionDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/401BB0E3-FFF2-41AB-9478-75D8D72F610A/21/421ab76a/HttpMessageInvoker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1893A7B1-1363-41CC-AAEF-3978EDDAF1DE/8e/76697b9d/HttpApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/App_Start/WebApiConfig.cs" root0="FORCE_HIGHLIGHTING" />
@@ -43,10 +46,9 @@
     <setting file="file://$PROJECT_DIR$/RestDemo/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/Models/Provider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B0A0C866-A361-4958-966B-72DB953E8B87/dd/d4f4f3a3/HttpControllerHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/RoleController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/RolesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/Models/CarMark.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/Models/Spare.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F8D88AA-02D5-46F6-9639-14471854CB7C/b9/de5673fe/FromBodyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1893A7B1-1363-41CC-AAEF-3978EDDAF1DE/ac/ba7c2244/HttpTaskAsyncHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,7 +67,6 @@
         <option value="$PROJECT_DIR$/RestDemo/Models/Providers.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/CarMark.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Category.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Models/Provider.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Spare.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/user.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Role.cs" />
@@ -80,10 +81,12 @@
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Roledb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/RoleController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/User.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/ProviderController.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/RolesController.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Models/Provider.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" />
       </list>
     </option>
@@ -152,6 +155,10 @@
       <workItem from="1572851488784" duration="5574000" />
       <workItem from="1572877112182" duration="971000" />
       <workItem from="1572882207512" duration="3630000" />
+      <workItem from="1572947900890" duration="4970000" />
+      <workItem from="1572961698884" duration="3305000" />
+      <workItem from="1573018203162" duration="2494000" />
+      <workItem from="1573031770777" duration="6117000" />
     </task>
     <servers />
   </component>
