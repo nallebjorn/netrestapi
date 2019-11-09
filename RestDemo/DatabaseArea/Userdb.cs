@@ -40,9 +40,7 @@ namespace RestDemo.DataBase
 
                 if (user.username != null)
                 {
-                    temp.email = reader["user_email"].ToString();
-                    temp.phone = reader["user_phone"].ToString();
-                    temp.role = new Role(Int32.Parse(reader["role_id"].ToString()), reader["role_name"].ToString());
+                    temp = new Userdb().getUser(temp.username);
                     temp.message = "Welcome to website, " + user.username + ".";
                 }
             }

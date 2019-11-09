@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ed1810be-52be-4b73-b54b-be676bbc1ea2" name="someserver" url="http://yy4ndexuser-001-site1.ctempurl.com/">
+        <fileTransfer host="ftp-eu.site4now.net" port="21" rootFolder="/site1">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

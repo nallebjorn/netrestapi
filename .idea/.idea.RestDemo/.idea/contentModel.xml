@@ -97,15 +97,18 @@
           <e p="Site.css" t="Include" />
         </e>
         <e p="Controllers" t="Include">
+          <e p="CategoriesController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
-          <e p="ProviderController.cs" t="Include" />
+          <e p="MarksController.cs" t="Include" />
           <e p="RolesController.cs" t="Include" />
+          <e p="SparesController.cs" t="Include" />
           <e p="UsersController.cs" t="Include" />
-          <e p="ValuesController.cs" t="Include" />
         </e>
         <e p="DatabaseArea" t="Include">
+          <e p="Categorydb.cs" t="Include" />
           <e p="DbCommand.cs" t="Include" />
           <e p="DBConnection.cs" t="Include" />
+          <e p="Markdb.cs" t="Include" />
           <e p="Providerdb.cs" t="Include" />
           <e p="Roledb.cs" t="Include" />
           <e p="Userdb.cs" t="Include" />
@@ -124,6 +127,7 @@
         <e p="Models" t="Include">
           <e p="CarMark.cs" t="Include" />
           <e p="Category.cs" t="Include" />
+          <e p="Img.cs" t="Include" />
           <e p="Provider.cs" t="Include" />
           <e p="Role.cs" t="Include" />
           <e p="Spare.cs" t="Include" />

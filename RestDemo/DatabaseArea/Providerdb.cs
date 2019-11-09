@@ -17,6 +17,7 @@ namespace RestDemo.DatabaseArea
             while (reader.Read())
             {
                 temp.role = new Role(Int32.Parse(reader["role_id"].ToString()), "provider");
+                temp.id = Int32.Parse(reader["provider_id"].ToString());
                 temp.username = reader["username"].ToString();
                 temp.email = reader["user_email"].ToString();
                 temp.phone = reader["user_phone"].ToString();
