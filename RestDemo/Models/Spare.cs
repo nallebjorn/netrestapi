@@ -2,7 +2,7 @@
 {
     public class Spare
     {
-        public int id { get; set; }
+        public string id { get; set; }
         public Category category { get; set; }
         public CarMark carMark { get; set; }
         public Provider provider { get; set; }

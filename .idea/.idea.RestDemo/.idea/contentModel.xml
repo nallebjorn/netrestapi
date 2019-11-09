@@ -111,6 +111,7 @@
           <e p="Markdb.cs" t="Include" />
           <e p="Providerdb.cs" t="Include" />
           <e p="Roledb.cs" t="Include" />
+          <e p="Sparedb.cs" t="Include" />
           <e p="Userdb.cs" t="Include" />
         </e>
         <e p="favicon.ico" t="Include" />
@@ -150,6 +151,9 @@
           <e p="jquery-3.3.1.slim.min.js" t="Include" />
           <e p="jquery-3.3.1.slim.min.map" t="Include" />
           <e p="modernizr-2.8.3.js" t="Include" />
+        </e>
+        <e p="Utilities" t="Include">
+          <e p="FileArea.cs" t="Include" />
         </e>
         <e p="Views" t="Include">
           <e p="_ViewStart.cshtml" t="Include" />

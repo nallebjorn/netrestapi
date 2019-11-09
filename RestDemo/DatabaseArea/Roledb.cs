@@ -18,5 +18,17 @@ namespace RestDemo.DatabaseArea
 
             return roles;
         }
+
+        public Role getRole(int id)
+        {
+            var cmd = DbCommand.create("SELECT * FROM roles WHERE role_id = "  +id);
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                return new Role(Int32.Parse(reader["role_id"].ToString()), reader["role_name"].ToString());
+            }
+
+            return null;
+        }
     }
 }

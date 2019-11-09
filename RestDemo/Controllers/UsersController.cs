@@ -9,7 +9,7 @@ namespace RestDemo.Controllers
 {
     public class UsersController : ApiController
     {
-        // GET api/users +
+        // GET api/users
         public IEnumerable<User> Get()
         {
             return new Userdb().getUsers().ToArray();

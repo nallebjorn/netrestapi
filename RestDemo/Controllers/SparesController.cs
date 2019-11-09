@@ -1,53 +1,37 @@
 ﻿using System;
-using System.Drawing;
-using System.IO;
-using System.Web;
+using System.Collections.Generic;
 using System.Web.Http;
+using RestDemo.DatabaseArea;
 using RestDemo.Models;
+using RestDemo.Utilities;
 
 namespace RestDemo.Controllers
 {
     public class SparesController : ApiController
     {
+        // GET api/spares
+        public IEnumerable<Spare> Get()
+        {
+            return null;
+        }
+
+        // GET api/spares/providerid
+        public IEnumerable<Spare> Get(int providerid)
+        {
+            return null;
+        }
+
+        // GET api/spares/id
+        public Spare Get(string id)
+        {
+            Console.WriteLine("heere");
+            return new Sparedb().getSpare(id);
+        }
+
+        // POST api/spares
         public bool Post([FromBody] Spare value)
         {
-            string providerPath = HttpContext.Current.Server.MapPath("/" + value.provider.id + "/Images/");
-            validateDir(providerPath);
-            return saveImages(providerPath, value.images);
-        }
-
-        private void validateDir(string dir)
-        {
-            bool exists = Directory.Exists(dir);
-            if (!exists)
-            {
-                Directory.CreateDirectory(dir);
-            }
-        }
-
-        private bool saveImages(string path, Img[] images)
-        {
-            try
-            {
-                foreach (var img in images)
-                {
-                    string p = path + img.id + getExtension(img.name);
-                    Console.WriteLine(p);
-                    File.WriteAllBytes(p, Convert.FromBase64String(img.content));
-                }
-
-                return true;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                return false;
-            }
-        }
-
-        private string getExtension(string input)
-        {
-            return Path.GetExtension(input);
+            return new Sparedb().addSpare(value);
         }
     }
 }
