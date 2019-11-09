@@ -21,5 +21,19 @@ namespace RestDemo.DatabaseArea
 
             return marks;
         }
+
+        public CarMark getMark(int id)
+        {
+            var cmd = DbCommand.create("SELECT * FROM car_marks WHERE car_mark_id = " + id);
+            var reader = cmd.ExecuteReader();
+            var mark = new CarMark();
+            while (reader.Read())
+            {
+                mark.id = Int32.Parse(reader["car_mark_id"].ToString());
+                mark.name = reader["car_mark_name"].ToString();
+            }
+
+            return mark;
+        }
     }
 }

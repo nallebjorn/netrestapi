@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/Models/Img.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Models/Img.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/Models/Spare.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Models/Spare.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,22 +85,16 @@
         <option value="$PROJECT_DIR$/RestDemo/App_Start/RouteConfig.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DataBase/Userdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/App_Start/WebApiConfig.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Roledb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/RoleController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/User.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/ProviderController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/UserController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/RolesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Provider.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/MarkController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/CarMark.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Category.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/CategoryController.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/CategoriesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/MarksController.cs" />
@@ -111,8 +104,14 @@
         <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Img.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Spare.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Roledb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" />
       </list>
     </option>
   </component>
@@ -206,7 +205,7 @@
       <workItem from="1573061226084" duration="596000" />
       <workItem from="1573211238921" duration="2315000" />
       <workItem from="1573215583379" duration="7223000" />
-      <workItem from="1573300460654" duration="13251000" />
+      <workItem from="1573300460654" duration="18758000" />
     </task>
     <servers />
   </component>
@@ -236,19 +235,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs</url>
-          <line>13</line>
-          <properties documentPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" initialLine="13">
-            <startOffsets>
-              <option value="356" />
-            </startOffsets>
-            <endOffsets>
-              <option value="390" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

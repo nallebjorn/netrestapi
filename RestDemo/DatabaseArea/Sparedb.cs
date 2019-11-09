@@ -24,11 +24,59 @@ namespace RestDemo.DatabaseArea
             return images.ToArray();
         }
 
+        public List<Spare> getSpares()
+        {
+            var spares = new List<Spare>();
+            var query = "SELECT * FROM spares_storage";
+            var cmd = DbCommand.create(query);
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                var temp = new Spare();
+                temp.id = reader["spare_id"].ToString();
+                temp.name = reader["spare_name"].ToString();
+                temp.description = reader["spare_description"].ToString();
+                temp.price = reader["spare_price"].ToString();
+                temp.vin = reader["spare_vin"].ToString();
+                temp.images = getImages(temp.id);
+                temp.carMark = new Markdb().getMark(Int32.Parse(reader["car_mark_id"].ToString()));
+                temp.provider = new Providerdb().getProvider(Int32.Parse(reader["provider_id"].ToString()));
+                temp.category = new Categorydb().getCategory(Int32.Parse(reader["category_id"].ToString()));
+                spares.Add(temp);
+            }
+
+            return spares;
+        }
+        
+        public List<Spare> getSpares(int providerId)
+        {
+            var spares = new List<Spare>();
+            var query = "SELECT * FROM spares_storage WHERE provider_id = " + providerId;
+            var cmd = DbCommand.create(query);
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                var temp = new Spare();
+                temp.id = reader["spare_id"].ToString();
+                temp.name = reader["spare_name"].ToString();
+                temp.description = reader["spare_description"].ToString();
+                temp.price = reader["spare_price"].ToString();
+                temp.vin = reader["spare_vin"].ToString();
+                temp.images = getImages(temp.id);
+                temp.carMark = new Markdb().getMark(Int32.Parse(reader["car_mark_id"].ToString()));
+                temp.provider = new Providerdb().getProvider(Int32.Parse(reader["provider_id"].ToString()));
+                temp.category = new Categorydb().getCategory(Int32.Parse(reader["category_id"].ToString()));
+                spares.Add(temp);
+            }
+
+            return spares;
+        }
+
         public Spare getSpare(string id)
         {
             var temp = new Spare();
             var query =
-                "SELECT * FROM  spares_storage INNER JOIN providers ON spares_storage.provider_id = providers.provider_id WHERE spares_storage.spare_id = \"" +
+                "SELECT * FROM  spares_storage WHERE spares_storage.spare_id = \"" +
                 id + "\"";
             var cmd = DbCommand.create(query);
             var reader = cmd.ExecuteReader();
@@ -40,14 +88,9 @@ namespace RestDemo.DatabaseArea
                 temp.price = reader["spare_price"].ToString();
                 temp.vin = reader["spare_vin"].ToString();
                 temp.images = getImages(id);
-                Console.WriteLine(reader["category_id"].ToString());
-                
-                temp.carMark = new CarMark();
-                temp.carMark.id  = Int32.Parse(reader["car_mark_id"].ToString());
-                temp.provider = new Provider();
-                temp.provider.id = Int32.Parse(reader["provider_id"].ToString());
-                temp.category = new Category();
-                temp.category.id = Int32.Parse(reader["category_id"].ToString());
+                temp.carMark = new Markdb().getMark(Int32.Parse(reader["car_mark_id"].ToString()));
+                temp.provider = new Providerdb().getProvider(Int32.Parse(reader["provider_id"].ToString()));
+                temp.category = new Categorydb().getCategory(Int32.Parse(reader["category_id"].ToString()));
             }
 
             return temp;

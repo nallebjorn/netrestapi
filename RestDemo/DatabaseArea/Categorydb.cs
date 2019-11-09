@@ -21,5 +21,19 @@ namespace RestDemo.DatabaseArea
 
             return categories;
         }
+
+        public Category getCategory(int id)
+        {
+            var cmd = DbCommand.create("SELECT * FROM categories WHERE category_id = " + id);
+            var reader = cmd.ExecuteReader();
+            var category = new Category();
+            while (reader.Read())
+            {
+                category.id = Int32.Parse(reader["category_id"].ToString());
+                category.name = reader["category_name"].ToString();
+            }
+
+            return category;
+        }
     }
 }

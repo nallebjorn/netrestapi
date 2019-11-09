@@ -12,19 +12,20 @@ namespace RestDemo.Controllers
         // GET api/spares
         public IEnumerable<Spare> Get()
         {
-            return null;
+            return new Sparedb().getSpares().ToArray();
         }
 
         // GET api/spares/providerid
-        public IEnumerable<Spare> Get(int providerid)
+        // GET api/spares?providerid=somestring
+        public IEnumerable<Spare> Get(int providerId)
         {
-            return null;
+            return new Sparedb().getSpares(providerId);
         }
 
         // GET api/spares/id
+        // GET api/spares/someidThisCanBeString
         public Spare Get(string id)
         {
-            Console.WriteLine("heere");
             return new Sparedb().getSpare(id);
         }
 
