@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MySql.Data.MySqlClient;
 using RestDemo.Models;
 
 namespace RestDemo.DatabaseArea
@@ -8,27 +9,32 @@ namespace RestDemo.DatabaseArea
     {
         public List<Role> getRoles()
         {
+            var connection = DbConnection.openConection();
             var roles = new List<Role>();
-            var cmd = DbCommand.create("SELECT * FROM roles");
+            var cmd = new MySqlCommand("SELECT * FROM roles", connection);
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
                 roles.Add(new Role(Int32.Parse(reader["role_id"].ToString()), reader["role_name"].ToString()));
             }
 
+            connection.Close();
             return roles;
         }
 
         public Role getRole(int id)
         {
-            var cmd = DbCommand.create("SELECT * FROM roles WHERE role_id = "  +id);
+            var connection = DbConnection.openConection();
+            var cmd = new MySqlCommand("SELECT * FROM roles WHERE role_id = " + id, connection);
             var reader = cmd.ExecuteReader();
+            Role role = null;
             while (reader.Read())
             {
-                return new Role(Int32.Parse(reader["role_id"].ToString()), reader["role_name"].ToString());
+                role = new Role(Int32.Parse(reader["role_id"].ToString()), reader["role_name"].ToString());
             }
 
-            return null;
+            connection.Close();
+            return role;
         }
     }
 }

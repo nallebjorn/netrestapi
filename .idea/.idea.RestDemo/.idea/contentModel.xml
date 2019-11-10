@@ -106,7 +106,6 @@
         </e>
         <e p="DatabaseArea" t="Include">
           <e p="Categorydb.cs" t="Include" />
-          <e p="DbCommand.cs" t="Include" />
           <e p="DBConnection.cs" t="Include" />
           <e p="Markdb.cs" t="Include" />
           <e p="Providerdb.cs" t="Include" />

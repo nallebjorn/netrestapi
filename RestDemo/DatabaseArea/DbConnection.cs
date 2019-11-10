@@ -4,27 +4,35 @@ namespace RestDemo.DatabaseArea
 {
     public class DbConnection
     {
-        public static MySqlConnection _instance;
+        private static string host = "localhost";
+        private static string database = "golont";
+        private static string uid = "root";
+        private static string password = "";
 
         public DbConnection(string host, string database, string uid, string password)
         {
-            DbConnection._instance = openConection(host, database, uid, password);
+            DbConnection.host = host;
+            DbConnection.database = database;
+            DbConnection.uid = uid;
+            DbConnection.password = password;
         }
 
-        private MySqlConnection openConection(string host, string database, string uid, string password)
+        public MySqlConnection openConection(string host, string database, string uid, string password)
         {
             MySqlConnection connection =
                 new MySqlConnection("server=" + host + ";database=" + database + ";uid=" + uid + ";pwd=" + password +
                                     ";");
-//                new MySqlConnection("server=" + host + ";database=" + database + ";uid=" + uid + ";pwd=" + password +
-//                                    ";");
             connection.Open();
             return connection;
         }
-
-        public static void closeConnection()
+        
+        public static MySqlConnection openConection()
         {
-            _instance.Clone();
+            MySqlConnection connection =
+                new MySqlConnection("server=" + host + ";database=" + database + ";uid=" + uid + ";pwd=" + password +
+                                    ";");
+            connection.Open();
+            return connection;
         }
     }
 }

@@ -197,7 +197,6 @@
     <Compile Include="Controllers\SparesController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DatabaseArea\Categorydb.cs" />
-    <Compile Include="DatabaseArea\DbCommand.cs" />
     <Compile Include="DatabaseArea\DbConnection.cs" />
     <Compile Include="DatabaseArea\Markdb.cs" />
     <Compile Include="DatabaseArea\Providerdb.cs" />

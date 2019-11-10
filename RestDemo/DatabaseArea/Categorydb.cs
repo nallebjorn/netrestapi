@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MySql.Data.MySqlClient;
 using RestDemo.Models;
 
 namespace RestDemo.DatabaseArea
@@ -8,8 +9,9 @@ namespace RestDemo.DatabaseArea
     {
         public List<Category> getCategories()
         {
+            var connection = DbConnection.openConection();
             var categories = new List<Category>();
-            var cmd = DbCommand.create("SELECT * FROM categories");
+            var cmd = new MySqlCommand("SELECT * FROM categories", connection);
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -19,12 +21,14 @@ namespace RestDemo.DatabaseArea
                 categories.Add(category);
             }
 
+            connection.Close();
             return categories;
         }
 
         public Category getCategory(int id)
         {
-            var cmd = DbCommand.create("SELECT * FROM categories WHERE category_id = " + id);
+            var connection = DbConnection.openConection();
+            var cmd = new MySqlCommand("SELECT * FROM categories WHERE category_id = " + id, connection);
             var reader = cmd.ExecuteReader();
             var category = new Category();
             while (reader.Read())
@@ -33,6 +37,7 @@ namespace RestDemo.DatabaseArea
                 category.name = reader["category_name"].ToString();
             }
 
+            connection.Close();
             return category;
         }
     }

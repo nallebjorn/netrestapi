@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MySql.Data.MySqlClient;
 using RestDemo.Models;
 using RestDemo.Utilities;
 
@@ -9,9 +10,10 @@ namespace RestDemo.DatabaseArea
     {
         private Img[] getImages(string id)
         {
+            var connection = DbConnection.openConection();
             var images = new List<Img>();
             var query = "SELECT * FROM spare_images WHERE spare_id = \"" + id + "\"";
-            var cmd = DbCommand.create(query);
+            var cmd = new MySqlCommand(query, connection);
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -21,14 +23,16 @@ namespace RestDemo.DatabaseArea
                 images.Add(temp);
             }
 
+            connection.Close();
             return images.ToArray();
         }
 
         public List<Spare> getSpares()
         {
+            var connection = DbConnection.openConection();
             var spares = new List<Spare>();
             var query = "SELECT * FROM spares_storage";
-            var cmd = DbCommand.create(query);
+            var cmd = new MySqlCommand(query, connection);
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -45,14 +49,16 @@ namespace RestDemo.DatabaseArea
                 spares.Add(temp);
             }
 
+            connection.Close();
             return spares;
         }
-        
+
         public List<Spare> getSpares(int providerId)
         {
+            var connection = DbConnection.openConection();
             var spares = new List<Spare>();
             var query = "SELECT * FROM spares_storage WHERE provider_id = " + providerId;
-            var cmd = DbCommand.create(query);
+            var cmd = new MySqlCommand(query, connection);
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -69,16 +75,18 @@ namespace RestDemo.DatabaseArea
                 spares.Add(temp);
             }
 
+            connection.Close();
             return spares;
         }
 
         public Spare getSpare(string id)
         {
+            var connection = DbConnection.openConection();
             var temp = new Spare();
             var query =
                 "SELECT * FROM  spares_storage WHERE spares_storage.spare_id = \"" +
                 id + "\"";
-            var cmd = DbCommand.create(query);
+            var cmd = new MySqlCommand(query, connection);
             var reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -93,17 +101,19 @@ namespace RestDemo.DatabaseArea
                 temp.category = new Categorydb().getCategory(Int32.Parse(reader["category_id"].ToString()));
             }
 
+            connection.Close();
             return temp;
         }
 
         public bool addSpare(Spare spare)
         {
+            var connection = DbConnection.openConection();
             var query =
                 "INSERT INTO `spares_storage` (`spare_id`, `category_id`, `car_mark_id`, `provider_id`,`spare_name`, `spare_description`, `spare_price`, `spare_vin`, `create_date`) VALUES ('" +
                 spare.id + "', '" + spare.category.id + "', '" + spare.carMark.id + "', '" + spare.provider.id +
                 "', '" + spare.name +
                 "', '" + spare.description + "', '" + spare.price + "', '" + spare.vin + "', current_timestamp())";
-            var cmd = DbCommand.create(query);
+            var cmd = new MySqlCommand(query, connection);
             try
             {
                 cmd.ExecuteNonQuery();
@@ -112,7 +122,10 @@ namespace RestDemo.DatabaseArea
             {
                 return false;
             }
-
+            finally
+            {
+                connection.Close();
+            }
 
             return addImages(spare);
         }
@@ -120,6 +133,7 @@ namespace RestDemo.DatabaseArea
         private bool addImages(Spare spare)
         {
             string providerPath = "/Images/" + spare.provider.id;
+            var connection = DbConnection.openConection();
             var imagePaths = new FileArea().saveImages(providerPath, spare.images);
             try
             {
@@ -127,7 +141,7 @@ namespace RestDemo.DatabaseArea
                 {
                     var query = "INSERT INTO `spare_images` (`spare_id`, `image_url`) VALUES ('" + spare.id +
                                 "', '" + path + "')";
-                    var cmd = DbCommand.create(query);
+                    var cmd = new MySqlCommand(query, connection);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -135,6 +149,10 @@ namespace RestDemo.DatabaseArea
             {
                 Console.WriteLine(e);
                 return false;
+            }
+            finally
+            {
+                connection.Close();
             }
 
             return true;
