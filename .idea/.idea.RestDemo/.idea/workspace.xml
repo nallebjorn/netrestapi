@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/DbCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Roledb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Roledb.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,21 +87,21 @@
         <option value="$PROJECT_DIR$/RestDemo/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Utils/Utils.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/DbCommand.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Img.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Models/Spare.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/CategoriesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/MarksController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/RolesController.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Roledb.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" />
       </list>
     </option>
   </component>
@@ -203,7 +197,12 @@
       <workItem from="1573215583379" duration="7223000" />
       <workItem from="1573300460654" duration="18758000" />
       <workItem from="1573335417838" duration="54000" />
-      <workItem from="1573373983850" duration="8586000" />
+      <workItem from="1573373983850" duration="9600000" />
+      <workItem from="1573395640482" duration="773000" />
+      <workItem from="1573493386219" duration="3968000" />
+      <workItem from="1573576314772" duration="2613000" />
+      <workItem from="1573610311048" duration="4537000" />
+      <workItem from="1573922769599" duration="45000" />
     </task>
     <servers />
   </component>

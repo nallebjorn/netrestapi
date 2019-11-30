@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web;
 using MySql.Data.MySqlClient;
 using RestDemo.Models;
 using RestDemo.Utilities;
@@ -148,6 +149,27 @@ namespace RestDemo.DatabaseArea
             catch (Exception e)
             {
                 Console.WriteLine(e);
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return true;
+        }
+
+        public bool deleteSpare(string id)
+        {
+            var connection = DbConnection.openConection();
+            var query = "DELETE FROM spares_storage WHERE spare_id = \"" + id + "\"";
+            var cmd = new MySqlCommand(query, connection);
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch
+            {
                 return false;
             }
             finally

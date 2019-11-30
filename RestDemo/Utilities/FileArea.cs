@@ -8,7 +8,7 @@ namespace RestDemo.Utilities
 {
     public class FileArea
     {
-        private void validateDir(string dir)
+        public void validateDir(string dir)
         {
             bool exists = Directory.Exists(dir);
             if (!exists)

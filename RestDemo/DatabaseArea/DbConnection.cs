@@ -8,6 +8,10 @@ namespace RestDemo.DatabaseArea
         private static string database = "golont";
         private static string uid = "root";
         private static string password = "";
+//        private static string host = "remotemysql.com";
+//        private static string database = "zDTKpKwNi9";
+//        private static string uid = "zDTKpKwNi9";
+//        private static string password = "sJBbdZ9Xsd";
 
         public DbConnection(string host, string database, string uid, string password)
         {
@@ -17,15 +21,6 @@ namespace RestDemo.DatabaseArea
             DbConnection.password = password;
         }
 
-        public MySqlConnection openConection(string host, string database, string uid, string password)
-        {
-            MySqlConnection connection =
-                new MySqlConnection("server=" + host + ";database=" + database + ";uid=" + uid + ";pwd=" + password +
-                                    ";");
-            connection.Open();
-            return connection;
-        }
-        
         public static MySqlConnection openConection()
         {
             MySqlConnection connection =
