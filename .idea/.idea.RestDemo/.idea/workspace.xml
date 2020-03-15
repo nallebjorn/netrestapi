@@ -4,9 +4,7 @@
     <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -203,6 +201,15 @@
       <workItem from="1573576314772" duration="2613000" />
       <workItem from="1573610311048" duration="4537000" />
       <workItem from="1573922769599" duration="45000" />
+      <workItem from="1575120373934" duration="181000" />
+      <workItem from="1576268463911" duration="881000" />
+      <workItem from="1583351419587" duration="83000" />
+      <workItem from="1584019686178" duration="505000" />
+      <workItem from="1584023274929" duration="754000" />
+      <workItem from="1584029193059" duration="271000" />
+      <workItem from="1584035362940" duration="173000" />
+      <workItem from="1584035764219" duration="667000" />
+      <workItem from="1584269571093" duration="1603000" />
     </task>
     <servers />
   </component>

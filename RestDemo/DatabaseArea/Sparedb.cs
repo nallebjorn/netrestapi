@@ -179,5 +179,11 @@ namespace RestDemo.DatabaseArea
 
             return true;
         }
+
+        public bool updateSpare(string id, Spare spare)
+        {
+//            string query = "UPDATE `spares` SET "
+            return false;
+        }
     }
 }

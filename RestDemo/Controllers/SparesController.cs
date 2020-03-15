@@ -39,5 +39,10 @@ namespace RestDemo.Controllers
         {
             return new Sparedb().deleteSpare(id);
         }
+
+        public bool Put(string id, [FromBody] Spare value)
+        {
+            return false;
+        }
     }
 }
