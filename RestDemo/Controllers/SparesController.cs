@@ -42,7 +42,7 @@ namespace RestDemo.Controllers
 
         public bool Put(string id, [FromBody] Spare value)
         {
-            return false;
+            return true;
         }
     }
 }

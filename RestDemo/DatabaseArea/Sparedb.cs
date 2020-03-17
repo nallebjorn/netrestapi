@@ -133,18 +133,24 @@ namespace RestDemo.DatabaseArea
 
         private bool addImages(Spare spare)
         {
+
+            if (spare.images.Length == 0)
+            {
+                return true;
+            }
+
             string providerPath = "/Images/" + spare.provider.id;
             var connection = DbConnection.openConection();
             var imagePaths = new FileArea().saveImages(providerPath, spare.images);
             try
             {
-                foreach (var path in imagePaths)
-                {
-                    var query = "INSERT INTO `spare_images` (`spare_id`, `image_url`) VALUES ('" + spare.id +
-                                "', '" + path + "')";
-                    var cmd = new MySqlCommand(query, connection);
-                    cmd.ExecuteNonQuery();
-                }
+                    foreach (var path in imagePaths)
+                    {
+                        var query = "INSERT INTO `spare_images` (`spare_id`, `image_url`) VALUES ('" + spare.id +
+                                    "', '" + path + "')";
+                        var cmd = new MySqlCommand(query, connection);
+                        cmd.ExecuteNonQuery();
+                    }
             }
             catch (Exception e)
             {

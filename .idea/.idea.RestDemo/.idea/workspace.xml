@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RestDemo/Tests/CategoriesContollerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/packages.config" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,15 +27,16 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F8D88AA-02D5-46F6-9639-14471854CB7C/1b/f0520c1a/ReflectedHttpActionDescriptor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/401BB0E3-FFF2-41AB-9478-75D8D72F610A/21/421ab76a/HttpMessageInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1893A7B1-1363-41CC-AAEF-3978EDDAF1DE/8e/76697b9d/HttpApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/00/92418e23/StackTrace.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1893A7B1-1363-41CC-AAEF-3978EDDAF1DE/8e/76697b9d/HttpApplication.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/App_Start/WebApiConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/App_Start/BundleConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B1D2C1D6-F4DD-47BE-A296-4BDD6464F67D/2f/397b541c/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/App_Start/RouteConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RestDemo/Web.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/401BB0E3-FFF2-41AB-9478-75D8D72F610A/ac/f37edfa4/DelegatingHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo.Tests/Tests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo/Web.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/App_Start/FilterConfig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,6 +57,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1893A7B1-1363-41CC-AAEF-3978EDDAF1DE/ac/ba7c2244/HttpTaskAsyncHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RestDemo/Tests/CategoriesContollerTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/Controllers/MarksController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,7 +97,6 @@
         <option value="$PROJECT_DIR$/RestDemo/Controllers/CategoriesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/MarksController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/RolesController.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Categorydb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Markdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Providerdb.cs" />
@@ -98,20 +104,33 @@
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Userdb.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Utilities/FileArea.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/DbConnection.cs" />
+        <option value="$PROJECT_DIR$/TestProject1/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/TestProject1/CategoriesController.cs" />
+        <option value="$PROJECT_DIR$/TestProject1/CategoriesControllerTest.cs" />
+        <option value="$PROJECT_DIR$/TestProject2/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Tests/CategoriesContollerTest.cs" />
+        <option value="$PROJECT_DIR$/RestDemoTests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/RestDemoTests/CategoriesControllerTest.cs" />
+        <option value="$PROJECT_DIR$/RestDemo.Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/RestDemo.Tests/CategoriesTest.cs" />
+        <option value="$PROJECT_DIR$/RestDemo.Test/Tests.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo.Tests/Tests.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1T42b4rHOUDTehNSyK7Y5rovbE9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,6 +229,10 @@
       <workItem from="1584035362940" duration="173000" />
       <workItem from="1584035764219" duration="667000" />
       <workItem from="1584269571093" duration="1603000" />
+      <workItem from="1584429314168" duration="1820000" />
+      <workItem from="1584431233736" duration="1278000" />
+      <workItem from="1584432557963" duration="4560000" />
+      <workItem from="1584437172458" duration="249000" />
     </task>
     <servers />
   </component>
@@ -239,7 +262,25 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RestDemo/Tests/CategoriesContollerTest.cs</url>
+          <line>13</line>
+          <properties documentPath="$PROJECT_DIR$/RestDemo/Tests/CategoriesContollerTest.cs" initialLine="13">
+            <startOffsets>
+              <option value="310" />
+            </startOffsets>
+            <endOffsets>
+              <option value="340" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="RiderUnitTests">
+        <watch expression="SparesController" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
