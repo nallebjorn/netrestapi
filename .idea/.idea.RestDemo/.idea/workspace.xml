@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RestDemo/Tests/CategoriesContollerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/RestDemo.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo.Tests/Tests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo.Tests/Tests.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,8 +110,8 @@
         <option value="$PROJECT_DIR$/RestDemo.Test/Tests.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" />
         <option value="$PROJECT_DIR$/RestDemo.Tests/Tests.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" />
       </list>
     </option>
   </component>
@@ -130,7 +124,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -232,7 +226,11 @@
       <workItem from="1584429314168" duration="1820000" />
       <workItem from="1584431233736" duration="1278000" />
       <workItem from="1584432557963" duration="4560000" />
-      <workItem from="1584437172458" duration="249000" />
+      <workItem from="1584437172458" duration="464000" />
+      <workItem from="1584448798618" duration="1783000" />
+      <workItem from="1584527609737" duration="3943000" />
+      <workItem from="1584690964170" duration="1440000" />
+      <workItem from="1585153747428" duration="484000" />
     </task>
     <servers />
   </component>
