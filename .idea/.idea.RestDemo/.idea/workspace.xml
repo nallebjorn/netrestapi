@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b16fcd88-ba6a-4ee7-9fe5-45627edb94e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestDemo.Tests/Tests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo.Tests/Tests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,10 +108,10 @@
         <option value="$PROJECT_DIR$/RestDemo.Tests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/RestDemo.Tests/CategoriesTest.cs" />
         <option value="$PROJECT_DIR$/RestDemo.Test/Tests.cs" />
-        <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/RestDemo/Controllers/SparesController.cs" />
         <option value="$PROJECT_DIR$/RestDemo.Tests/Tests.cs" />
         <option value="$PROJECT_DIR$/RestDemo/DatabaseArea/Sparedb.cs" />
+        <option value="$PROJECT_DIR$/RestDemo/Controllers/UsersController.cs" />
       </list>
     </option>
   </component>
@@ -231,6 +231,11 @@
       <workItem from="1584527609737" duration="3943000" />
       <workItem from="1584690964170" duration="1440000" />
       <workItem from="1585153747428" duration="484000" />
+      <workItem from="1585229750997" duration="708000" />
+      <workItem from="1586258313741" duration="1260000" />
+      <workItem from="1586352736360" duration="1274000" />
+      <workItem from="1586371780038" duration="628000" />
+      <workItem from="1587579880748" duration="784000" />
     </task>
     <servers />
   </component>

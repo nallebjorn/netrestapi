@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Http;
+using System.Xml;
+using System.Xml.Linq;
 using RestDemo.DataBase;
 using RestDemo.DatabaseArea;
 using RestDemo.Models;
@@ -12,7 +16,10 @@ namespace RestDemo.Controllers
         // GET api/users
         public IEnumerable<User> Get()
         {
-            return new Userdb().getUsers().ToArray();
+            var x = new Userdb().getUsers().ToArray();
+            var xml = new XElement("Users", x.Select(s => new XElement("foo", s.username)));
+            xml.Save(HttpContext.Current.Server.MapPath("/kekekkekr.xml"));
+            return x;
         }
 
         // GET api/users/username
